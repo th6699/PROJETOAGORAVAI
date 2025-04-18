@@ -1,0 +1,73 @@
+/* Estilos para animações AOS */
+
+/* Define a opacidade inicial para elementos animados */
+[data-aos] {
+    opacity: 0; /* Elementos começam invisíveis */
+    transition-property: opacity, transform; /* Define as propriedades que serão animadas */
+    transition-duration: 1s; /* Define a duração da animação */
+    transition-timing-function: ease-in-out; /* Define a suavidade da animação */
+}
+
+/* Quando o elemento está visível na tela */
+[data-aos].aos-animate {
+    opacity: 1; /* Torna o elemento visível */
+    transform: translateZ(0); /* Remove qualquer transformação 3D */
+}
+
+/* Animação de fade-up */
+[data-aos="fade-up"] {
+    transform: translateY(20px); /* Move o elemento 20px para baixo inicialmente */
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0); /* Retorna o elemento à posição original */
+}
+
+/* Animação de fade-down */
+[data-aos="fade-down"] {
+    transform: translateY(-20px); /* Move o elemento 20px para cima inicialmente */
+}
+
+[data-aos="fade-down"].aos-animate {
+    transform: translateY(0); /* Retorna o elemento à posição original */
+}
+
+/* Animação de fade-left */
+[data-aos="fade-left"] {
+    transform: translateX(-20px); /* Move o elemento 20px para a esquerda inicialmente */
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translateX(0); /* Retorna o elemento à posição original */
+}
+
+/* Animação de fade-right */
+[data-aos="fade-right"] {
+    transform: translateX(20px); /* Move o elemento 20px para a direita inicialmente */
+}
+
+[data-aos="fade-right"].aos-animate {
+    transform: translateX(0); /* Retorna o elemento à posição original */
+}
+
+/* Animação de zoom-in */
+[data-aos="zoom-in"] {
+    transform: scale(0.8); /* Reduz o tamanho do elemento inicialmente */
+}
+
+[data-aos="zoom-in"].aos-animate {
+    transform: scale(1); /* Retorna o elemento ao tamanho original */
+}
+
+/* Animação de zoom-out */
+[data-aos="zoom-out"] {
+    transform: scale(1.2); /* Aumenta o tamanho do elemento inicialmente */
+}
+
+[data-aos="zoom-out"].aos-animate {
+    transform: scale(1); /* Retorna o elemento ao tamanho original */
+}
+/* Animação de flip */
+[data-aos="flip"] {
+    transform: rotateY(180deg); /* Rotaciona o elemento 180 graus inicialmente */
+}

@@ -1,0 +1,34 @@
+/* Font Awesome básico para ícones */
+
+/* Define a fonte padrão para os ícones */
+@font-face {
+    font-family: "FontAwesome";
+    src: url("../Roboto_Slab/RobotoSlab-VariableFont_wght.ttf") format("ttf"),
+         url("../Roboto_Slab/RobotoSlab-VariableFont_wght.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Classe base para todos os ícones */
+.fa {
+    font-family: "FontAwesome"; /* Aplica a fonte FontAwesome */
+    font-style: normal; /* Remove estilos como itálico */
+    font-weight: normal; /* Define o peso da fonte */
+    display: inline-block; /* Garante que os ícones sejam exibidos em linha */
+    text-rendering: auto; /* Melhora a renderização do texto/ícone */
+}
+
+/* Ícones sólidos */
+.fa-solid {
+    font-weight: 900; /* Define o peso da fonte para ícones sólidos */
+}
+
+/* Ícones regulares */
+.fa-pasta:before {
+    font-family: "IconeFont"; /* Usa a fonte personalizada */
+    content: "(../icones/iconehome.png)"; /* Código Unicode do ícone da pasta */
+    font-style: normal; /* Remove estilos como itálico */
+    font-weight: normal; /* Define o peso da fonte */
+    display: inline-block; /* Garante que o ícone seja exibido em linha */
+    background-image: url("../icones/iconehome.png"); /* Adiciona uma imagem como ícone */;
+}
