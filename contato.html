@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o tipo de documento como HTML5 e o idioma como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Torna o site responsivo em dispositivos móveis -->
+    <title>Zombies</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/all.min.css"> <!-- Inclui o arquivo CSS da biblioteca Font Awesome -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Inclui o arquivo CSS principal do site -->
+    <link rel="stylesheet" href="css/aos.css"> <!-- Inclui o arquivo CSS para animações (AOS - Animate On Scroll) -->
+</head>
+
+<body> <!-- Início do corpo da página -->
+    <header> <!-- Define o cabeçalho da página -->
+        <img src="img/logo.png" alt=""> <!-- Exibe o logotipo do site -->
+        <nav> <!-- Define o menu de navegação -->
+            <a href="index.html">Sobre</a> <!-- Link para a página "Sobre" -->
+            <a href="#jogo">Jogo</a> <!-- Link para a página "Jogo" -->
+            <a href="contato.html">Contato</a> <!-- Link para a página "Contato" -->
+            <a href="#galeria">Galeria</a> <!-- Link para a página "Galeria" -->
+        </nav>
+    </header>
+
+    <main id="contato">
+        <h1>Entre em Contato</h1>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="mensagem-sucesso" style="display: none; color: green;">Mensagem enviada com sucesso!</p>
+    </main>
+
+    <script src="js/validacao.js"></script> <!-- Inclui o arquivo JavaScript -->
+</body>
+</html>
+

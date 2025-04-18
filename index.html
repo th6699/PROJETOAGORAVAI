@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o tipo de documento como HTML5 e o idioma como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Torna o site responsivo em dispositivos móveis -->
+    <title>Zombies</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="css/all.min.css"> <!-- Inclui o arquivo CSS da biblioteca Font Awesome -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Inclui o arquivo CSS principal do site -->
+    <link rel="stylesheet" href="css/aos.css"> <!-- Inclui o arquivo CSS para animações (AOS - Animate On Scroll) -->
+</head>
+
+<body> <!-- Início do corpo da página -->
+    <header> <!-- Define o cabeçalho da página -->
+        <img src="img/logo.png" alt=""> <!-- Exibe o logotipo do site -->
+        <nav> <!-- Define o menu de navegação -->
+            <a href="#sobre">Sobre</a> <!-- Link para a página "Sobre" -->
+            <a href="#jogo">Jogo</a> <!-- Link para a página "Jogo" -->
+            <a href="contato.html">Contato</a> <!-- Link para a página "Contato" -->
+            <a href="#galeria">Galeria</a> <!-- Link para a página "Galeria" -->
+        </nav>
+    </header>
+    <main> <!-- Define o conteúdo principal da página -->
+        <section> <!-- Define uma seção dentro do conteúdo principal -->
+            <h1>Bem vindo ao mundo de Zombies</h1> <!-- Título principal da página -->
+            <h2> Um mundo pós-apocalíptico onde apenas uma pessoa pode salvar a humanidade, você!</h2>
+            <!-- Subtítulo que descreve o tema do site -->
+            <p>Você está pronto para enfrentar os desafios e salvar o mundo? Então, prepare-se para a aventura!</p>
+            <!-- Parágrafo de introdução ao tema do site -->
+            <div data-aos="fade-up">Conteúdo animado</div> <!-- Div com animação de fade-up ao rolar a página -->
+        </section>
+    </main>
+    <main id="sobre"> <!-- Define o conteúdo principal da página com a classe "sobre" -->
+        <h1>Sobre o jogo</h1>
+        <p>O jogo Zombies se passa num mundo pós-apocalíptico no ano de 2157, onde você é o único capacitado, treinado e
+            vacinado para salvar a humanidade de um vírus que transforma cadáveres em mortos vivos!</p>
+    </main>
+    <main id="galeria">
+        <h1>Galeria</h1>
+        <p>Veja algumas imagens do jogo Zombies.</p>
+        <div class="galeria"> <!-- Define uma galeria de imagens -->
+            <img src="img/galeria1.png" alt="Imagem 1"> <!-- Exibe a primeira imagem da galeria -->
+            <img src="img/galeria2.png" alt="Imagem 2"> <!-- Exibe a segunda imagem da galeria -->
+            <img src="img/galeria3.png" alt="Imagem 3"> <!-- Exibe a terceira imagem da galeria -->
+            <img src="img/galeria4.png" alt="Imagem 4"> <!-- Exibe a terceira imagem da galeria -->
+            <img src="img/galeria5.png" alt="Imagem 5"> <!-- Exibe a terceira imagem da galeria -->
+        </div>
+    </main>
+    <main id="jogo">
+        <h1>Jogo</h1> <!-- Título da seção do jogo -->
+        <p>Jogue Zombies agora mesmo!</p> <!-- Texto explicativo -->
+        <iframe src="jogo/index.html" width="100%" height="600px" style="border: none;"></iframe>
+        <!-- Exibe o jogo Zombies em um iframe, permitindo que o jogo seja jogado diretamente na página -->
+
+    </main>
+    <footer> <!-- Define o rodapé da página -->
+        <!-- Texto de direitos reservados -->
+        <p>2025 Meu Site. Todos os Direitos reservados.</p> <!-- Exibe o texto de direitos autorais -->
+    </footer>
+</body>
+
+</html>
